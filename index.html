@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备自适应全屏示例</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* 调整这里 */
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            z-index: 1000; /* 确保在最上层 */
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .links a {
+            margin: 5px 0;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .info {
+            text-align: center;
+            margin-top: 20px; /* 添加这里 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>欢迎访问我们的网站</h1>
+            <p>这是一个设备自适应全屏示例。</p>
+        </div>
+        <div class="links">
+            <a href="#">链接1</a>
+            <a href="#">链接2</a>
+            <a href="#">链接3</a>
+            <a href="#">链接4</a>
+        </div>
+    </div>
+</body>
+</html>
